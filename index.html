@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Training Diary - Pawanpreet Singh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Java Training Diary</h1>
+        <p>20-Day Java Training at Excellence Technology, Mohali</p>
+        <p><strong>Name:</strong> Pawanpreet Singh | <strong>URN:</strong> 2203524</p>
+    </header>
+
+    <nav>
+        <ul>
+            <!-- Links to each day for easy navigation -->
+            <li><a href="#day1">Day 1</a></li>
+            <li><a href="#day2">Day 2</a></li>
+            <li><a href="#day3">Day 3</a></li>
+            <li><a href="#day4">Day 4</a></li>
+            <li><a href="#day5">Day 5</a></li>
+            <li><a href="#day6">Day 6</a></li>
+            <li><a href="#day7">Day 7</a></li>
+            <li><a href="#day8">Day 8</a></li>
+            <li><a href="#day9">Day 9</a></li>
+            <li><a href="#day10">Day 10</a></li>
+            <li><a href="#day11">Day 11</a></li>
+            <li><a href="#day12">Day 12</a></li>
+            <li><a href="#day13">Day 13</a></li>
+            <li><a href="#day14">Day 14</a></li>
+            <li><a href="#day15">Day 15</a></li>
+            <li><a href="#day16">Day 16</a></li>
+            <li><a href="#day17">Day 17</a></li>
+            <li><a href="#day18">Day 18</a></li>
+            <li><a href="#day19">Day 19</a></li>
+            <li><a href="#day20">Day 20</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Detailed entries for each day with code snippets -->
+        
+        <!-- DAY 1 -->
+        <section id="day1">
+            <h2>Day 1: Introduction to Java & Setup</h2>
+            <p>Set up the Java Development Kit (JDK) and configured the development environment. Learned basic syntax and wrote the "Hello, World!" program.</p>
+            <pre><code class="language-java">
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+            </code></pre>
+        </section>
+
+        <!-- DAY 2 -->
+        <section id="day2">
+            <h2>Day 2: Data Types and Variables</h2>
+            <p>Covered Java data types and variables, and practiced declaring and initializing different types.</p>
+            <pre><code class="language-java">
+int age = 21;
+double salary = 50000.5;
+boolean isEmployed = true;
+            </code></pre>
+        </section>
+
+        <!-- DAY 3 -->
+        <section id="day3">
+            <h2>Day 3: Operators and Control Statements</h2>
+            <p>Learned about arithmetic, relational, and logical operators, and explored if-else and switch-case statements.</p>
+            <pre><code class="language-java">
+int a = 10;
+int b = 20;
+if (a < b) {
+    System.out.println("a is less than b");
+}
+            </code></pre>
+        </section>
+
+        <!-- DAY 4 -->
+        <section id="day4">
+            <h2>Day 4: Loops (for, while, do-while)</h2>
+            <p>Covered loops in Java and practiced iterating over values using for, while, and do-while loops.</p>
+            <pre><code class="language-java">
+for (int i = 0; i < 5; i++) {
+    System.out.println("Value: " + i);
+}
+            </code></pre>
+        </section>
+
+       
+
+        <!-- DAY 5 -->
+<section id="day5">
+    <h2>Day 5: Arrays and Array Manipulation</h2>
+    <p>Explored arrays in Java, covering one-dimensional and two-dimensional arrays, array declarations, and performing basic operations on array elements.</p>
+    <pre><code class="language-java">
+int[] numbers = {1, 2, 3, 4, 5};
+for (int num : numbers) {
+    System.out.println("Number: " + num);
+}
+    </code></pre>
+    <p>Worked with two-dimensional arrays and matrix representation.</p>
+    <pre><code class="language-java">
+int[][] matrix = {{1, 2, 3}, {4, 5, 6}};
+for (int i = 0; i < matrix.length; i++) {
+    for (int j = 0; j < matrix[i].length; j++) {
+        System.out.print(matrix[i][j] + " ");
+    }
+    System.out.println();
+}
+    </code></pre>
+</section>
+
+<!-- DAY 6 -->
+<section id="day6">
+    <h2>Day 6: Methods and Functions</h2>
+    <p>Introduced methods in Java, including syntax, parameters, return types, and the concept of method overloading. Practiced creating and using functions in Java.</p>
+    <pre><code class="language-java">
+public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public int add(int a, int b, int c) { // Method Overloading
+        return a + b + c;
+    }
+}
+    </code></pre>
+    <p>Learned about the importance of method signatures and modularizing code with functions.</p>
+    <pre><code class="language-java">
+Calculator calc = new Calculator();
+System.out.println("Sum: " + calc.add(5, 10));
+System.out.println("Sum: " + calc.add(5, 10, 15));
+    </code></pre>
+</section>
+
+<!-- DAY 7 -->
+<section id="day7">
+    <h2>Day 7: Object-Oriented Programming - Classes and Objects</h2>
+    <p>Covered the basics of Object-Oriented Programming (OOP), focusing on creating classes and objects. Learned how to define properties and methods within a class.</p>
+    <pre><code class="language-java">
+class Car {
+    String color;
+    String model;
+
+    public void displayInfo() {
+        System.out.println("Car Model: " + model + ", Color: " + color);
+    }
+}
+    </code></pre>
+    <p>Created objects of the class and accessed their properties and methods.</p>
+    <pre><code class="language-java">
+Car myCar = new Car();
+myCar.color = "Red";
+myCar.model = "Tesla Model S";
+myCar.displayInfo();
+    </code></pre>
+</section>
+
+<!-- DAY 8 -->
+<section id="day8">
+    <h2>Day 8: Constructors and 'this' Keyword</h2>
+    <p>Explored constructors in Java, including the default and parameterized constructors. Also discussed the 'this' keyword for referring to current instance variables.</p>
+    <pre><code class="language-java">
+class Student {
+    String name;
+    int age;
+
+    public Student(String name, int age) { // Parameterized Constructor
+        this.name = name;
+        this.age = age;
+    }
+
+    public void display() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+    </code></pre>
+    <p>Instantiated objects using constructors and observed the usage of 'this' for clarity.</p>
+    <pre><code class="language-java">
+Student student1 = new Student("John", 20);
+student1.display();
+    </code></pre>
+</section>
+
+<!-- DAY 9 -->
+<section id="day9">
+    <h2>Day 9: Inheritance in Java</h2>
+    <p>Learned about inheritance in Java, a key OOP concept that allows one class to inherit properties and methods from another. Discussed the 'extends' keyword.</p>
+    <pre><code class="language-java">
+class Animal {
+    public void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+class Dog extends Animal {
+    public void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+    </code></pre>
+    <p>Created an instance of the subclass and demonstrated inheritance of methods.</p>
+    <pre><code class="language-java">
+Dog myDog = new Dog();
+myDog.eat();
+myDog.bark();
+    </code></pre>
+</section>
+
+<!-- DAY 10 -->
+<section id="day10">
+    <h2>Day 10: Polymorphism and Method Overriding</h2>
+    <p>Explored polymorphism and the concept of method overriding, where subclasses can provide specific implementations for methods defined in their superclass.</p>
+    <pre><code class="language-java">
+class Animal {
+    public void sound() {
+        System.out.println("Some sound...");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    public void sound() {
+        System.out.println("Meow");
+    }
+}
+    </code></pre>
+    <p>Demonstrated runtime polymorphism with overridden methods in subclasses.</p>
+    <pre><code class="language-java">
+Animal myCat = new Cat();
+myCat.sound(); // Outputs: Meow
+    </code></pre>
+</section>
+
+<!-- DAY 11 -->
+<section id="day11">
+    <h2>Day 11: Encapsulation and Access Modifiers</h2>
+    <p>Covered encapsulation, a principle of hiding data and providing controlled access via getters and setters. Discussed access modifiers: private, public, protected.</p>
+    <pre><code class="language-java">
+class BankAccount {
+    private double balance;
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        if (balance >= 0) {
+            this.balance = balance;
+        }
+    }
+}
+    </code></pre>
+    <p>Practiced using getter and setter methods to manage access to private variables.</p>
+    <pre><code class="language-java">
+BankAccount account = new BankAccount();
+account.setBalance(500);
+System.out.println("Balance: " + account.getBalance());
+    </code></pre>
+</section>
+<!-- DAY 12 -->
+<section id="day12">
+    <h2>Day 12: Abstract Classes and Interfaces</h2>
+    <p>Learned about abstract classes and interfaces in Java. Explored how abstract classes are used when we have a common base but want some methods to be implemented by subclasses. Interfaces were also covered as a way to define methods that multiple classes can implement.</p>
+    <pre><code class="language-java">
+abstract class Shape {
+    abstract void draw();
+}
+
+class Circle extends Shape {
+    @Override
+    void draw() {
+        System.out.println("Drawing Circle");
+    }
+}
+
+interface Drawable {
+    void draw();
+}
+
+class Rectangle implements Drawable {
+    public void draw() {
+        System.out.println("Drawing Rectangle");
+    }
+}
+    </code></pre>
+    <p>Used an interface to define methods across multiple classes.</p>
+    <pre><code class="language-java">
+Shape circle = new Circle();
+circle.draw();
+
+Drawable rectangle = new Rectangle();
+rectangle.draw();
+    </code></pre>
+</section>
+
+<!-- DAY 13 -->
+<section id="day13">
+    <h2>Day 13: Exception Handling</h2>
+    <p>Focused on exception handling in Java, covering 'try', 'catch', 'finally', and 'throw' keywords. Discussed common exceptions and how to handle them gracefully.</p>
+    <pre><code class="language-java">
+try {
+    int divide = 10 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("Cannot divide by zero!");
+} finally {
+    System.out.println("Division attempt completed.");
+}
+    </code></pre>
+    <p>Practiced using custom exceptions and the 'throws' keyword.</p>
+    <pre><code class="language-java">
+class CustomException extends Exception {
+    public CustomException(String message) {
+        super(message);
+    }
+}
+
+public class TestException {
+    public void checkNumber(int num) throws CustomException {
+        if (num < 0) {
+            throw new CustomException("Negative number not allowed");
+        }
+    }
+}
+    </code></pre>
+</section>
+
+<!-- DAY 14 -->
+<section id="day14">
+    <h2>Day 14: File Handling</h2>
+    <p>Introduced to file handling in Java. Learned to read from and write to files using classes like FileReader, FileWriter, and BufferedReader.</p>
+    <pre><code class="language-java">
+import java.io.FileWriter;
+import java.io.IOException;
+
+try (FileWriter writer = new FileWriter("output.txt")) {
+    writer.write("Hello, this is a test file!");
+} catch (IOException e) {
+    e.printStackTrace();
+}
+    </code></pre>
+    <p>Practiced reading data from files using FileReader and BufferedReader.</p>
+    <pre><code class="language-java">
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+try (BufferedReader reader = new BufferedReader(new FileReader("output.txt"))) {
+    String line;
+    while ((line = reader.readLine()) != null) {
+        System.out.println(line);
+    }
+} catch (IOException e) {
+    e.printStackTrace();
+}
+    </code></pre>
+</section>
+
+<!-- DAY 15 -->
+<section id="day15">
+    <h2>Day 15: Collections Framework - List and ArrayList</h2>
+    <p>Learned about Java Collections Framework, starting with List and ArrayList. Practiced adding, removing, and accessing elements in an ArrayList.</p>
+    <pre><code class="language-java">
+import java.util.ArrayList;
+
+ArrayList<String> list = new ArrayList<>();
+list.add("Apple");
+list.add("Banana");
+list.add("Cherry");
+
+for (String fruit : list) {
+    System.out.println(fruit);
+}
+    </code></pre>
+    <p>Practiced removing elements and checking the list's size.</p>
+    <pre><code class="language-java">
+list.remove("Banana");
+System.out.println("List size: " + list.size());
+    </code></pre>
+</section>
+
+<!-- DAY 16 -->
+<section id="day16">
+    <h2>Day 16: Collections Framework - Set and HashSet</h2>
+    <p>Explored Set interface and HashSet implementation. Practiced using HashSet to store unique values and avoid duplicates.</p>
+    <pre><code class="language-java">
+import java.util.HashSet;
+
+HashSet<Integer> numbers = new HashSet<>();
+numbers.add(10);
+numbers.add(20);
+numbers.add(20); // Duplicate entry
+
+for (int number : numbers) {
+    System.out.println(number);
+}
+    </code></pre>
+    <p>Practiced methods like 'contains' and 'remove' on HashSet.</p>
+    <pre><code class="language-java">
+if (numbers.contains(10)) {
+    System.out.println("10 is in the set");
+}
+numbers.remove(10);
+    </code></pre>
+</section>
+
+<!-- DAY 17 -->
+<section id="day17">
+    <h2>Day 17: Collections Framework - Map and HashMap</h2>
+    <p>Introduced to Map interface and HashMap implementation. Practiced using HashMap to store key-value pairs and retrieve values by keys.</p>
+    <pre><code class="language-java">
+import java.util.HashMap;
+
+HashMap<String, Integer> ageMap = new HashMap<>();
+ageMap.put("Alice", 25);
+ageMap.put("Bob", 30);
+
+System.out.println("Alice's age: " + ageMap.get("Alice"));
+    </code></pre>
+    <p>Practiced iterating through a HashMap and checking for keys.</p>
+    <pre><code class="language-java">
+for (String name : ageMap.keySet()) {
+    System.out.println(name + ": " + ageMap.get(name));
+}
+    </code></pre>
+</section>
+
+<!-- DAY 18 -->
+<section id="day18">
+    <h2>Day 18: Introduction to Java Streams</h2>
+    <p>Learned about the Java Streams API for functional-style operations on collections. Practiced filtering, mapping, and reducing collections with streams.</p>
+    <pre><code class="language-java">
+import java.util.Arrays;
+import java.util.List;
+
+List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+names.stream()
+    .filter(name -> name.startsWith("A"))
+    .forEach(System.out::println);
+    </code></pre>
+    <p>Practiced using 'map' and 'collect' to transform and aggregate stream data.</p>
+    <pre><code class="language-java">
+List<Integer> lengths = names.stream()
+    .map(String::length)
+    .collect(Collectors.toList());
+
+System.out.println(lengths);
+    </code></pre>
+</section>
+
+<!-- DAY 19 -->
+<section id="day19">
+    <h2>Day 19: Lambda Expressions</h2>
+    <p>Explored lambda expressions as a concise way to represent anonymous functions in Java. Practiced using lambdas with functional interfaces.</p>
+    <pre><code class="language-java">
+List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+names.forEach(name -> System.out.println(name));
+    </code></pre>
+    <p>Used lambda expressions to filter and map data in a functional programming style.</p>
+    <pre><code class="language-java">
+List<String> uppercaseNames = names.stream()
+    .map(name -> name.toUpperCase())
+    .collect(Collectors.toList());
+
+System.out.println(uppercaseNames);
+    </code></pre>
+</section>
+<section id="day20">
+    <h2>Day 20: Final Project - Notepad Application</h2>
+    <p>Developed a fully functional Notepad application using Java and Swing. The project incorporates file handling, undo/redo functionality, dark mode, and text customization options.</p>
+
+    <p><strong>Project Features:</strong></p>
+    <ul>
+        <li><strong>Text Area with Line Numbering:</strong> A custom component was created to display line numbers alongside the text area for easy navigation in large files.</li>
+        <li><strong>Undo/Redo Functionality:</strong> Implemented using Java's <code>UndoManager</code>, allowing users to undo and redo text changes.</li>
+        <li><strong>File Operations:</strong> Features to create new files, open existing files, and save files, with <code>JFileChooser</code> for file selection and <code>BufferedReader</code>/<code>BufferedWriter</code> for reading and writing text.</li>
+        <li><strong>Text Formatting:</strong> Users can modify font, font size, font color, and background color, as well as apply text styles like bold, italic, or plain.</li>
+        <li><strong>Dark Mode:</strong> A toggle to switch between light and dark mode for the application interface.</li>
+    </ul>
+
+    <p><strong>Code Example:</strong></p>
+    <pre><code class="language-java">
+import javax.swing.*;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
+import javax.swing.undo.UndoManager;
+import java.awt.*;
+import java.awt.event.*;
+import java.io.*;
+
+public class NotepadApp extends JFrame implements ActionListener {
+    JTextArea textArea;
+    LineNumberingTextArea lineNumbers;
+    UndoManager undoManager;
+    
+    public NotepadApp() {
+        textArea = new JTextArea();
+        lineNumbers = new LineNumberingTextArea(textArea);
+        JScrollPane scrollPane = new JScrollPane(textArea);
+        scrollPane.setRowHeaderView(lineNumbers);
+        add(scrollPane);
+        
+        undoManager = new UndoManager();
+        textArea.getDocument().addUndoableEditListener(undoManager);
+
+        // Setup the menu and actions (not shown for brevity)
+    }
+
+    public void actionPerformed(ActionEvent e) {
+        String command = e.getActionCommand();
+        switch (command) {
+            case "New": textArea.setText(""); break;
+            case "Open": openFile(); break;
+            case "Save": saveFile(); break;
+            // More action handlers
+        }
+    }
+
+    private void openFile() {
+        JFileChooser fileChooser = new JFileChooser();
+        int option = fileChooser.showOpenDialog(this);
+        if (option == JFileChooser.APPROVE_OPTION) {
+            File file = fileChooser.getSelectedFile();
+            try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+                textArea.read(reader, null);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+
+    private void saveFile() {
+        JFileChooser fileChooser = new JFileChooser();
+        int option = fileChooser.showSaveDialog(this);
+        if (option == JFileChooser.APPROVE_OPTION) {
+            File file = fileChooser.getSelectedFile();
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+                textArea.write(writer);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> new NotepadApp().setVisible(true));
+    }
+}
+    </code></pre>
+    <p>The application allows users to work with text files efficiently, with features like line numbering, dark mode, and customizable text formatting options.</p>
+</section>
+
+
+
+
+        <!-- Continue adding similar detailed entries up to Day 20 -->
+
+        <!-- DAY 20 -->
+       
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
